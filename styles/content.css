@@ -1,0 +1,10 @@
+.title-shadow {
+	box-shadow: 0px 2px #3a3a3a25;
+}
+
+.button-border {
+	border-color: black;
+}
+.button-border:hover {
+	border-color: white;
+}
