@@ -1,8 +1,10 @@
+import { useRouter } from 'next/router'
 import { FunctionComponent } from 'react'
 import Button from '../Button'
 import { SubTitle, Text } from '../Typography'
 
 const Intro: FunctionComponent = () => {
+	const router = useRouter()
 	return (
 		<div className="flex items-start justify-center p-5 flex-col">
 			<SubTitle>Thumb Cutter</SubTitle>
@@ -17,7 +19,9 @@ const Intro: FunctionComponent = () => {
 				The sharp arc blade is solid and durable, easy to clean, not easy to get
 				rust.
 			</Text>
-			<Button>Order / Inquiry</Button>
+			<Button onClick={() => router.push('/contact')}>
+				Order / Inquiry
+			</Button>
 		</div>
 	)
 }

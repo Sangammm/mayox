@@ -1,11 +1,15 @@
+import { useRouter } from 'next/router'
 import * as React from 'react'
 import { Call, Email, WhatsApp } from './svg'
 import { Title } from './Typography'
 
 export const Header: React.FC = () => {
+	const router = useRouter()
 	return (
 		<header className="h-32  px-12 py-2 flex w-full z-10 fixed title-shadow bg-black items-center justify-between flex-col xl:flex-row">
-			<Title>Mayox</Title>
+			<span onClick={() => router.push('/')}>
+				<Title className='cursor-pointer'>Mayox</Title>
+			</span>
 			<div className="xl:pr-12 flex items-start flex-row xl:flex-col">
 				<a
 					href="tel:+919662377224"
