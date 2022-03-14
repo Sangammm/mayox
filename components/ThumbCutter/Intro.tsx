@@ -17,9 +17,7 @@ const Intro: FunctionComponent = () => {
 				The sharp arc blade is solid and durable, easy to clean, not easy to get
 				rust.
 			</Text>
-			<Button>
-				Order / Inquiry
-			</Button>
+			<Button>Order / Inquiry</Button>
 		</div>
 	)
 }

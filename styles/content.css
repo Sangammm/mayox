@@ -8,3 +8,8 @@
 .button-border:hover {
 	border-color: white;
 }
+
+.vector-link svg {
+  height: 25px;
+  margin-right: 0.15rem;
+}
