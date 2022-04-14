@@ -40,7 +40,7 @@ const cotactData = [
 	{
 		id: 4,
 		icon: <Directions />,
-		text: 'Fortune Die and Modules',
+		text: 'Fortune Dye and Modules',
 		contactNote: `Let's meet`,
 		linkProps: {
 			href: 'https://goo.gl/maps/FtpYfgrMZ3g2t3zM6',
