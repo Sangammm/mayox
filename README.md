@@ -1,5 +1,14 @@
+# Mayox
+
+Mayox makes innovative yet simple plastic products.
+I created this product branding page.
+Designed Developed Deployed by [Sangam Rajpara](mailto:sangamrajpara@gmail.com)
+
+# Development Guide
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+This website is build with Nextjs, Typescript and [Tailwindcss](https://tailwindcss.com/)
 ## Getting Started
 
 First, run the development server:
