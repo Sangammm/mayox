@@ -2,14 +2,21 @@ import { useRouter } from 'next/router'
 import * as React from 'react'
 import { Call, Email, WhatsApp } from './svg'
 import { Title } from './Typography'
-
+import { useSpring, animated } from 'react-spring'
+import { useTranslateAnimation } from '../hooks/animation/tranlate.hook'
 export const Header: React.FC = () => {
 	const router = useRouter()
+
+	const slideAnimation = useTranslateAnimation({ x: 0, y: '-200%' })
+
 	return (
-		<header className="h-32  px-12 py-2 flex w-full z-10 fixed title-shadow bg-black items-center justify-between flex-col xl:flex-row">
-			<span onClick={() => router.push('/')}>
-				<Title className='cursor-pointer'>Mayox</Title>
-			</span>
+		<animated.header
+			style={slideAnimation}
+			className="h-32  px-12 py-2 flex w-full z-10 fixed title-shadow bg-black items-center justify-between flex-col xl:flex-row"
+		>
+			<animated.span onClick={() => router.push('/')}>
+				<Title className="cursor-pointer">Mayox</Title>
+			</animated.span>
 			<div className="xl:pr-12 flex items-start flex-row xl:flex-col">
 				<a
 					href="tel:+919662377224"
@@ -37,6 +44,6 @@ export const Header: React.FC = () => {
 					<span className="ml-1">Whatsapp</span>
 				</a>
 			</div>
-		</header>
+		</animated.header>
 	)
 }
