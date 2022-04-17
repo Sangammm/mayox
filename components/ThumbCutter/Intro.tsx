@@ -14,8 +14,8 @@ const Intro: FunctionComponent = () => {
 			style={slideAnimation}
 			className="flex items-start justify-center p-5 flex-col"
 		>
-			<SubTitle>Thumb Cutter</SubTitle>
-			<Text className="pt-5">
+			<SubTitle className='mb-3'>Thumb Cutter</SubTitle>
+			<Text className="pt-2">
 				Wide applications in the garden industry, agriculture, kitchen
 			</Text>
 			<Text className="pt-2">

@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
 			<animated.span onClick={() => router.push('/')}>
 				<Title className="cursor-pointer">Mayox</Title>
 			</animated.span>
-			<div className="xl:pr-12 flex items-start flex-row xl:flex-col">
+			<div className="xl:pr-12 flex items-start flex-row xl:flex-col hidden">
 				<a
 					href="tel:+919662377224"
 					className="vector-link flex cursor-pointer xl:my-0.5 mx-2 xl:mx-0"
