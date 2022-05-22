@@ -1,11 +1,9 @@
 import * as React from 'react'
-import Card from '../components/Card'
 import Content from '../components/Content'
 import { Header } from '../components/Header'
-import { Text, Title } from '../components/Typography'
+import { Title } from '../components/Typography'
 import { Call, WhatsApp, Email, Directions } from '../components/svg'
 import { ContactCard } from '../components/ContactCartd'
-import { table } from 'console'
 
 const cotactData = [
 	{
