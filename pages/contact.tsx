@@ -14,7 +14,7 @@ const cotactData = [
 		text: '+918140440481',
 		contactNote: `Let's Talk`,
 		linkProps: {
-			href: 'tel:+919662377224',
+			href: 'tel:+918140440481',
 		},
 	},
 	{
