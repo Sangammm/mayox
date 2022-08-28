@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
 	return (
 		<animated.header
 			style={slideAnimation}
-			className="h-32  px-12 py-2 flex w-full z-10 fixed title-shadow bg-black items-center justify-between flex-col xl:flex-row"
+			className="h-32  px-12 py-2 flex w-full z-10 fixed title-shadow bg-black items-center justify-center flex-col md:flex-row md:justify-between"
 		>
 			<animated.span onClick={() => router.push('/')}>
 				<Title className="cursor-pointer">Mayox</Title>
