@@ -29,16 +29,16 @@ const cotactData = [
 	{
 		id: 3,
 		icon: <Email />,
-		text: 'pratikpatoliya@gmail.com',
+		text: 'fortunediesrajkot@gmail.com',
 		contactNote: `Email Us`,
 		linkProps: {
-			href: 'mailto:pratikpatoliya@gmail.com',
+			href: 'mailto:fortunediesrajkot@gmail.com',
 		},
 	},
 	{
 		id: 4,
 		icon: <Directions />,
-		text: 'Fortune Dye and Modules',
+		text: 'Fortune Dies and Moulds',
 		contactNote: `Let's meet`,
 		linkProps: {
 			href: 'https://goo.gl/maps/FtpYfgrMZ3g2t3zM6',
