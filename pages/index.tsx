@@ -1,11 +1,9 @@
 import type { NextPage } from 'next'
-import Card from '../components/Card'
 import Content from '../components/Content'
+import { DoorKnboCard } from '../components/DoorKnob/DoorKnboCard'
 import CommonHead from '../components/Head'
 import { Header } from '../components/Header'
-
-import Intro from '../components/ThumbCutter/Intro'
-import IntroImage from '../components/ThumbCutter/IntroImage'
+import { ThumbCutterCard } from '../components/ThumbCutter/ThumbCutterCard'
 
 const Home: NextPage = () => {
 	return (
@@ -13,7 +11,8 @@ const Home: NextPage = () => {
 			<CommonHead />
 			<Header />
 			<Content>
-				<Card left={<Intro />} right={<IntroImage />} />
+				<ThumbCutterCard />
+				<DoorKnboCard />
 			</Content>
 		</>
 	)
