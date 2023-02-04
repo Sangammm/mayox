@@ -5,8 +5,8 @@ import { Title } from '../components/Typography'
 import { Call, WhatsApp, Email, Directions } from '../components/svg'
 import { ContactCard } from '../components/ContactCartd'
 
-const cotactData = [
-	{
+export const contactData = {
+	call: {
 		id: 1,
 		icon: <Call />,
 		text: '+918140440481',
@@ -15,7 +15,7 @@ const cotactData = [
 			href: 'tel:+918140440481',
 		},
 	},
-	{
+	whatsapp: {
 		id: 2,
 		icon: <WhatsApp />,
 		text: '+918140440481',
@@ -26,7 +26,7 @@ const cotactData = [
 			rel: 'noreferrer',
 		},
 	},
-	{
+	email: {
 		id: 3,
 		icon: <Email />,
 		text: 'fortunediesrajkot@gmail.com',
@@ -35,18 +35,18 @@ const cotactData = [
 			href: 'mailto:fortunediesrajkot@gmail.com',
 		},
 	},
-	{
+	address: {
 		id: 4,
 		icon: <Directions />,
 		text: 'Fortune Dies and Moulds',
-		contactNote: `Let's meet`,
+		contactNote: ``,
 		linkProps: {
 			href: 'https://goo.gl/maps/FtpYfgrMZ3g2t3zM6',
 			target: '_blank',
 			rel: 'noreferrer',
 		},
 	},
-]
+}
 
 const Contact = () => (
 	<>
@@ -54,7 +54,7 @@ const Contact = () => (
 		<Content>
 			<Title className="flex justify-center pt-16 text-5xl">Contact Us</Title>
 			<div className="my-8 mx-10 grid grid-cols-1 gap-4 xl:grid-cols-2 md:mx-60 xl:mx-56">
-				{cotactData.map((c) => (
+				{Object.values(contactData).map((c) => (
 					<ContactCard {...c} key={c.id} />
 				))}
 			</div>

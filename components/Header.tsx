@@ -4,6 +4,7 @@ import { Call, Email, WhatsApp } from './svg'
 import { Title } from './Typography'
 import { useSpring, animated } from 'react-spring'
 import { useTranslateAnimation } from '../hooks/animation/tranlate.hook'
+import { contactData } from '../pages/contact'
 export const Header: React.FC = () => {
 	const router = useRouter()
 
@@ -17,9 +18,9 @@ export const Header: React.FC = () => {
 			<animated.span onClick={() => router.push('/')}>
 				<Title className="cursor-pointer">Mayox</Title>
 			</animated.span>
-			<div className="xl:pr-12 flex items-start flex-row xl:flex-col hidden">
+			<div className="xl:pr-12 flex items-start flex-row xl:flex-col">
 				<a
-					href="tel:+919662377224"
+					{...contactData.call.linkProps}
 					className="vector-link flex cursor-pointer xl:my-0.5 mx-2 xl:mx-0"
 				>
 					<Call />
@@ -27,7 +28,7 @@ export const Header: React.FC = () => {
 				</a>
 
 				<a
-					href="mailto:pratikpatoliya@gmail.com"
+					{...contactData.email.linkProps}
 					className="vector-link flex cursor-pointer	xl:my-0.5 mx-2 xl:mx-0"
 				>
 					<Email />
@@ -35,9 +36,7 @@ export const Header: React.FC = () => {
 				</a>
 
 				<a
-					target="_blank"
-					rel="noreferrer"
-					href="https://wa.me/+918140440481"
+					{...contactData.whatsapp.linkProps}
 					className="vector-link flex cursor-pointer xl:my-0.5 mx-2 xl:mx-0"
 				>
 					<WhatsApp />

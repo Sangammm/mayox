@@ -7,7 +7,7 @@ export type CardProps = {
 
 const Card: FunctionComponent<CardProps> = ({ left:Left, right:Right }) => {
 	return (
-		<div className="grid grid-cols-1 px-1 py-20 bg-grey min-h-fit sm:grid-cols-2 sm:px-20 md:px-40">
+		<div className="grid grid-cols-1 px-1 py-5 bg-grey min-h-fit sm:grid-cols-2 sm:px-20 md:px-40">
       {Left}
 			{Right}
 		</div>
