@@ -11,20 +11,18 @@ export const ThumbCutterCard = () => {
 	return (
 		<Card
 			left={
-				<div>
-					<Intro
-						subTitle="Thumb Cutter"
-						textArray={[
-							`Wide applications in the garden industry, agriculture, kitchen`,
-							`Professional in helping to pick vegetables, fruits, peppers, chillies, and more, labor-saving and is a good helper in harvest season.`,
-							`The sharp arc blade is solid and durable, easy to clean, not easy to get rust.`,
-						]}
-					>
-						<Button className="pl-5" onClick={() => router.push('/contact')}>
-							Order / Inquiry
-						</Button>
-					</Intro>
-				</div>
+				<Intro
+					subTitle="Thumb Cutter"
+					textArray={[
+						`Wide applications in the garden industry, agriculture, kitchen`,
+						`Professional in helping to pick vegetables, fruits, peppers, chillies, and more, labor-saving and is a good helper in harvest season.`,
+						`The sharp arc blade is solid and durable, easy to clean, not easy to get rust.`,
+					]}
+				>
+					<Button className="pl-5" onClick={() => router.push('/contact')}>
+						Order / Inquiry
+					</Button>
+				</Intro>
 			}
 			right={<IntroImage src={thumbCutter} />}
 		/>

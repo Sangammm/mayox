@@ -9,8 +9,6 @@ type IntoProps = {
 	textArray: string[]
 }
 const Intro: FunctionComponent<IntoProps> = ({ subTitle, textArray, children }) => {
-	const router = useRouter()
-
 	const slideAnimation = useTranslateAnimation({ x: '-150%', y: 0 })
 
 	return (
